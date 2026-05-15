@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="greeting">This is 1st paragraph</p>
+    <p class="greeting">This is 2nd paragraph</p>
+
+    <script>
+        const allElement = document.querySelectorAll(".greeting")
+
+        console.log(allElement)
+
+        allElement.forEach((el) => console.log(el.textContent))
+
+</script>
+</body>
+</html>

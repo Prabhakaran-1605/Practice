@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #d8d51a;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: blue;
+}

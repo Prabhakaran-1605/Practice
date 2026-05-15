@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="getAttribute" prabhakar-info="This is my personal Info">
+    <p>Get Attribute</p>
+    </div>
+    <script>
+        const element = document.getElementById("getAttribute")
+        const attributeInfo = element.getAttribute("prabhakar-info")
+        console.log(attributeInfo)
+    </script>
+    
+</body>
+</html>

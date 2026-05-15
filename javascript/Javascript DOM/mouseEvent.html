@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"> This is a new Paragraph for mouse Event</p>
+    <button id = "btn">Click the button</button>
+
+    <script>
+
+        const paraElement = document.getElementById("para")
+        const btnElement = document.getElementById("btn")
+
+        // 1st way 
+
+        // btnElement.addEventListener('click',function(){
+        //     paraElement.textContent = "It has been changed"
+        // })
+
+        // second way 
+
+          btnElement.addEventListener('click',mouseClickHandler)
+//  we should not call , we need to give it as reference
+        function mouseClickHandler() {
+            paraElement.textContent = "It has been changed"
+        }
+    </script>
+    
+</body>
+</html>

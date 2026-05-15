@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .exampleClass {
+            color : blue
+         }
+    </style>
+</head>
+<body>
+
+    <p class="exampleClass">The paragraph has the example</p>
+    <p class="exampleClass"> so does this</p>
+    <p>This don't have example class</p>    
+    <script>
+        const elements = document.getElementsByClassName("exampleClass")
+        console.log(elements)
+        for (i=0; i < elements.length; i++) {
+            element = elements[i]
+            element.textContent = "Changed text content by for loop"
+            element.style.fontWeight = "bold"
+            element.style.color = "red"
+        }
+    </script>
+</body>
+</html>

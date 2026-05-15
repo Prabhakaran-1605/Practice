@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const createElement = document.createElement("p")
+        document.body.appendChild(createElement)
+        createElement.textContent = "This is a dynamically created element"
+        const buttonElement = document.createElement("button")
+        buttonElement.textContent = "Click the button"
+        createElement.appendChild(buttonElement)
+    </script>
+</body>
+</html>

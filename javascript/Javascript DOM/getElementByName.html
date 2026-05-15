@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p name="NameRef">This is line 1</p>
+    <p name="NameRef" >Line 2</p>
+    <script>
+    const elements = document.getElementsByName("NameRef")
+    console.log(elements)
+    console.log(elements[0])
+    console.log(elements[1])
+
+    for (i=0;i<elements.length;i++){
+        newElement = elements[i]
+        newElement.innerText = "Welocome to DOM"   
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is first paragraph</p>
+    <p>This is second paragraph</p>
+    <button> This is button 1</button>
+    <button> This is button 2</button>
+    <script>
+        const elements = document.getElementsByTagName("p")
+        console.log(elements)
+
+        for (i=0; i<elements.length; i++){
+            element = elements[i]
+            console.log(element)
+            element.textContent = "New line for the paragraph " + (i+1)
+        }
+    </script>
+</body>
+</html>
